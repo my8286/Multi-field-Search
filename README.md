@@ -20,7 +20,7 @@ Implemented a UI which takes a csv file as a input and displays it on the UI. Im
  
 3. Visit http://127.0.0.1:5000 in a browser and you should see the home page
 
-<a href="" ><img src="./static/home.png" height=400 width=1500 ></a>
+<a href="" ><img src="./static/home.PNG" ></a>
 
 
 
