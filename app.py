@@ -1,12 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from csv import reader
 
 app = Flask(__name__)
 
 # Render home page endpoint
-@app.route('/home')
+@app.route('/')
 def home():
-    return "hello world"
+    return render_template('index.html')
 
 #Data preprocessing endpoint
 @app.route('/data')
