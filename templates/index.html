@@ -22,7 +22,10 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <style>   
+    <style>
+        .top-buffer { margin-top:80px; }
+       
+        
     </style>
 </head>
 
@@ -37,6 +40,8 @@
                 </nav>
             </div>
         </div>
+        <!-- <h2>Simple Pagination Example using Datatables Js Library</h2> -->
+        <!-- Image and text -->
     </div>   
     <div class="container"> 
         <div class="row top-buffer">
@@ -57,7 +62,19 @@
         </div>
     </div>
 
-   
+    <script>
+        $('#myTable').DataTable({
+            ajax: "/data",
+            columns: [
+                { data: 5 },
+                { data: 0 },
+                { data: 1 },
+                { data: 2 },
+                { data: 3 },
+                { data: 4 },
+            ]
+        });
+    </script>
 </body>
 
 </html>
